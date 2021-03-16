@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name_dev">App Exemplo DEV</string>
+    <string name="app_name_homol">App Exemplo HML</string>
+    <string name="app_name_main">App Exemplo PRD</string>
+</resources>
