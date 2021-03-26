@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="generic_error_message_title">Erro ao tentar carregar as informações</string>
+    <string name="generic_error_message_message">Tente novamente em alguns minutos</string>
+    <string name="ok">OK</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+</resources>
