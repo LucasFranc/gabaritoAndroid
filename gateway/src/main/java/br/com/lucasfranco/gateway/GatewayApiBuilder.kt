@@ -9,9 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import java.util.concurrent.TimeUnit
 
-abstract class GatewayApiBuilder constructor(
-    private val context: Context
-) {
+abstract class GatewayApiBuilder {
 
     fun getBaseRetrofit(
         customConfigBuilder: OkHttpClient.Builder.() -> OkHttpClient.Builder = { this }
@@ -19,18 +17,11 @@ abstract class GatewayApiBuilder constructor(
         Retrofit.Builder().apply {
             client(makeBaseOkHttpClient(getUrl(), customConfigBuilder))
             baseUrl(getUrl().url)
-            makeScaalars()
             makeConverterFactory()
         }.build()
 
     private fun Retrofit.Builder.makeConverterFactory() {
         addConverterFactory(GsonConverterFactory.create())
-    }
-
-    private fun Retrofit.Builder.makeScaalars() {
-        if (enableScalarsConverterFactory()) {
-            addConverterFactory(ScalarsConverterFactory.create())
-        }
     }
 
     protected open fun makeBaseOkHttpClient(
@@ -67,8 +58,6 @@ abstract class GatewayApiBuilder constructor(
     }
 
     abstract fun getUrl(): URLs
-
-    open fun isEncrypt(): Boolean = false
 
     open fun enableScalarsConverterFactory(): Boolean = false
 

@@ -12,6 +12,7 @@ object Versions {
     const val KTLINT = "0.39.0"
     const val KTLINT_PLUGIN = "9.4.1"
     const val DETEKT = "1.12.0"
+    const val COROUTINES_VERSION = "1.3.9"
     const val LIFECYCLE_KTX = "2.2.0"
     const val MATERIAL_DESIGN = "1.2.0"
     const val NAVIGATION_ARGS = "1.0.0"
@@ -24,6 +25,7 @@ object Versions {
     const val BEN_MANES_DEPENDENCY_VERSIONS = "0.33.0"
     const val GOOGLE_SERVICES_VERSION = "4.3.4"
     const val AGP = "4.1.1"
+    const val LOTTIE_VERSION = "3.4.4"
 
 
     const val ANDROID_X_CORE_VERSION = "1.3.2"
@@ -61,13 +63,18 @@ object Versions {
 object Dependencies {
     //jetbrains
     const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.KOTLIN}"
+    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES_VERSION}"
     const val ANDROIDXCORE = "androidx.core:core-ktx:${Versions.ANDROID_X_CORE_VERSION}"
     const val ACTIVITYKTX = "androidx.activity:activity-ktx:${Versions.ACTIVITY_KTX_VERSION}"
     const val APPCOMPAT = "androidx.appcompat:appcompat:${Versions.APP_COMPAT_VERSION}"
     const val FRAGMENTKTX = "androidx.fragment:fragment-ktx:${Versions.ANDROIDX_FRAGMENT_KTX_VERSION}"
     const val RECYCLER = "androidx.recyclerview:recyclerview:${Versions.RECYCLER_VERSION}"
+    const val LOTTIE = "com.airbnb.android:lottie:${Versions.LOTTIE_VERSION}"
     const val LIFECYCLE_VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE_VERSION}"
     const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:${Versions.LIFECYCLE_VERSION}"
+    const val LIFECYCLE_RUNTIME = "androidx.lifecycle:lifecycle-runtime:${Versions.LIFECYCLE_VERSION}"
+    const val LIFECYCLE_RUNTIME_KTX = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.LIFECYCLE_VERSION}"
+    const val LIFECYCLE_LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFECYCLE_VERSION}"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT_VERSION}"
     const val MATERIAL = "com.google.android.material:material:${Versions.MATERIAL_VERSION}"
     const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION_VERSION}"

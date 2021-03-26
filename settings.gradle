@@ -18,4 +18,4 @@ pluginManagement {
 }
 rootProject.name = "ExemploArquitetura"
 
-include(":app", ":gateway", "model", "util")
+include(":app", ":gateway", ":domain", ":model", ":util", "di", ":login", ":common")

@@ -60,4 +60,10 @@ dependencies {
     implementation(Dependencies.KOINVIEWMODEL)
     implementation(Dependencies.KOINEXT)
     implementation(Dependencies.CIRCLE_IMAGE_VIEW)
+
+    implementation(project(":di"))
+
+}
+android {
+    dynamicFeatures = mutableSetOf(":login")
 }

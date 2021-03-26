@@ -11,7 +11,6 @@ class AndroidModuleDynamicLibraryPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         if (project.hasProperty("android")) {
             with(project) {
-                project.plugins.apply("dexguard")
                 configureAndroidDynamicLibrary()
             }
         }
